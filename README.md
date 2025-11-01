@@ -12,6 +12,11 @@ MCP Builder/
 ├── requirements.txt        # Dipendenze Python
 ├── LICENSE                 # Licenza MIT open source
 ├── .gitignore              # File di configurazione Git
+├── .cursor/                # Comandi ottimizzati per la community
+│   └── commands/
+│       ├── Creazione_MCP.md        # Guida completa con troubleshooting
+│       ├── Installazione_Progetto.md # Setup guide MCP Builder
+│       └── Super_Search.md         # Sequential thinking best practices
 └── README.md              # Questo file
 ```
 
@@ -33,6 +38,12 @@ MCP Builder/
 - Comprehensive error handling
 - Professional logging
 - GitHub-ready project structure
+
+### Community Commands
+- **Instant Setup**: Comandi pronti per la creazione rapida di server MCP
+- **Advanced Troubleshooting**: Guide complete per risolvere problemi comuni
+- **PowerShell Optimized**: Best practices specifiche per Windows PowerShell
+- **Sequential Thinking**: Framework per ricerche approfondite e analisi
 
 ## Quick Start
 
