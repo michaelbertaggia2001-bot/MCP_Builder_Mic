@@ -1,203 +1,139 @@
+   ![Python](https://img.shields.io/badge/python-3.8+-blue)
+   ![License](https://img.shields.io/badge/license-MIT-green)
+   ![Status](https://img.shields.io/badge/status-production--ready-success)
+
 # MCP Builder - Model Context Protocol Builder
+
+## About
+
+💡 MCP Builder: La piattaforma definitiva per sviluppatori vibe coder. Template premium, testing automatizzato, best practices integrate. Da concept a produzione in pochi minuti
 
 ## Project Overview
 
-Questo repository contiene MCP Builder, uno strumento professionale per la generazione automatica di server MCP (Model Context Protocol). Il progetto fornisce template di alta qualità e best practices per lo sviluppo di integrazioni MCP.
-
-## Project Structure
-
-```
-MCP Builder/
-├── mcp_builder.py          # Tool principale per creare MCP server
-├── requirements.txt        # Dipendenze Python
-├── LICENSE                 # Licenza MIT open source
-├── .gitignore              # File di configurazione Git
-└── README.md              # Questo file
-```
-
-## Features
-
-### MCP Builder Core
-- Generazione automatica di server MCP professionali
-- Template Python con FastMCP framework
-- Input validation avanzata con Pydantic v2
-- Error handling robusto e logging completo
-- Supporto per trasporti stdio, HTTP e SSE
-- Ambiente virtuale integrato (.venv)
-- Test suite automatica inclusa
-
-### Generated Server Features
-- FastMCP framework per performance elevate
-- Async HTTP client con httpx
-- Type-safe API con Python type hints
-- Comprehensive error handling
-- Professional logging
-- GitHub-ready project structure
+Tool professionale per generare automaticamente server MCP (Model Context Protocol) production-ready. Template Python/TypeScript, FastMCP framework, validazione Pydantic v2, test suite automatica
 
 ## Quick Start
 
 ### 1. Installazione
 
 ```bash
-# Clona o scarica il repository
-git clone https://github.com/MIC-username/MCP_Builder_MIC.git
-cd MCP_Builder_MIC
-
-# Installa dipendenze
+git clone https://github.com/michaelbertaggia2001-bot/MCP_Builder_Mic.git
+cd MCP_Builder_Mic
 pip install -r requirements.txt
 ```
 
-### 2. Genera un Nuovo MCP Server
+### 2. Genera Server MCP
 
 ```bash
 python mcp_builder.py --service your-service --python --transport stdio
 ```
 
-### 3. Test del Server Generato
+### 3. Test e Configurazione
 
 ```bash
 cd your_service_mcp
-.venv\Scripts\Activate.ps1  # PowerShell Windows
-# .venv/bin/activate       # macOS/Linux
+.venv\Scripts\Activate.ps1  # PowerShell
 pip install -r requirements.txt
 .venv\Scripts\python test_server.py
 ```
 
-## Example Usage
+## Workflow Cursor - Crea MCP in 3 Step
 
-### Generare Server GitHub
+Se usi **Cursor**, abbiamo ottimizzato il workflow con comandi rapidi accessibili tramite `/`:
+
+### Step 1: Setup → `@Installazione_Progetto.md`
+Installa MCP Builder e verifica che tutto funzioni:
+```bash
+python mcp_builder.py --help
+```
+
+### Step 2: Ricerca → `@Super_Search.md`
+Trova idee, documentazione e best practices usando sequential thinking + MCP deep research. Perfetto per:
+- Esplorare API disponibili
+- Trovare documentazione aggiornata
+- Identificare pattern e soluzioni
+
+### Step 3: Build → `@Creazione_MCP.md`
+Crea il tuo server seguendo la guida completa con troubleshooting avanzato. Include:
+- Configurazione MCP client (Cursor/Claude Desktop)
+- Test automatici
+- Debug avanzato
+
+**Workflow completo:** Setup → Ricerca → Build = Server MCP funzionante in pochi minuti
+
+## Features
+
+- **Generazione automatica** server MCP Python/TypeScript
+- **FastMCP framework** per performance elevate
+- **Pydantic v2** validazione input type-safe
+- **Test suite automatica** inclusa
+- **Trasporti supportati:** stdio, HTTP, SSE
+- **Ambiente virtuale** integrato (.venv)
+- **Error handling robusto** e logging completo
+- **Template production-ready** con struttura GitHub-ready
+
+## Esempi
 
 ```bash
+# Server GitHub
 python mcp_builder.py --service github --python --transport stdio
-```
 
-### Generare Server Weather API
-
-```bash
+# Server Weather API
 python mcp_builder.py --service weather-api --python --transport http
-```
 
-### Generare Server con TypeScript
-
-```bash
+# Server TypeScript
 python mcp_builder.py --service my-service --typescript --transport sse
 ```
 
-## Generated Project Structure
-
-Ogni server generato include:
+## Struttura Progetto Generato
 
 ```
 your_service_mcp/
-├── your_service_mcp.py      # Main server file
-├── test_server.py           # Automated tests
-├── requirements.txt         # Python dependencies
-├── pyproject.toml          # Modern Python packaging
-├── README.md               # Service documentation
-├── CHANGELOG.md            # Version tracking
-├── LICENSE                 # MIT License
-├── .gitignore             # Git configuration
-├── .venv/                 # Virtual environment
-└── evaluation.xml         # MCP evaluation tests
+├── your_service_mcp.py      # Server principale
+├── test_server.py           # Test automatici
+├── requirements.txt         # Dipendenze
+├── pyproject.toml          # Packaging moderno
+├── README.md               # Documentazione
+└── .venv/                  # Virtual environment
 ```
 
 ## Requirements
 
 - Python 3.8+
-- FastMCP framework
-- httpx for async HTTP
-- pydantic for validation
-- Virtual environment support
+- FastMCP, httpx, pydantic
 
 ## Architecture
 
-### Core Components
+**Core Components:**
+- MCPBuilder: generazione automatica server
+- Template System: template Python/TypeScript ottimizzati
+- Validation Layer: Pydantic v2
+- Test Suite: framework test automatico
 
-1. **MCPBuilder Class**: Generazione automatica server
-2. **Template System**: Template Python/TypeScript ottimizzati
-3. **Validation Layer**: Pydantic v2 input validation
-4. **Error Handling**: Comprehensive error management
-5. **Test Suite**: Automated testing framework
-
-### Design Principles
-
-- **Production Ready**: Enterprise-grade code quality
-- **Security First**: Safe credential handling
-- **Performance Optimized**: Async/await patterns
-- **Developer Friendly**: Clear documentation and examples
-- **Standards Compliant**: MCP protocol specifications
+**Design:** Production-ready, security-first, async/await, standards compliant
 
 ## Best Practices
 
-### Generated Code Features
-- Input validation with Pydantic models
-- Async HTTP client with proper error handling
-- Type hints throughout
-- Comprehensive logging
-- Environment-based configuration
-- Secure API key management
+Server generati includono:
+- Validazione input con modelli Pydantic
+- HTTP client async con httpx
+- Type hints completi
+- Gestione errori completa
+- Configurazione environment-based
+- Logging professionale
 
-### Windows PowerShell Compatibility
-- Tested with PowerShell 5 and 7+
-- UTF-8 encoding support
-- No emoji or special characters
-- Cross-platform compatibility
-
-## Success Metrics
-
-### Code Quality
-- 100% Success Rate per template generation
-- Production-ready generated servers
-- Comprehensive test coverage
-- Professional error handling
-
-### Developer Experience
-- One-command server generation
-- Automated virtual environment setup
-- GitHub-ready project structure
-- Clear documentation and examples
-
-## Use Cases
-
-### API Integrations
-- REST API wrappers
-- Database connectors
-- External service integrations
-- Custom business logic servers
-
-### Development Tools
-- Code generation templates
-- Development automation
-- Testing frameworks
-- Documentation generators
-
-## Next Steps
-
-1. **Generate Your Server**: `python mcp_builder.py --service your-api`
-2. **Customize Logic**: Implement your API calls in the generated server
-3. **Test Thoroughly**: Run the automated test suite
-4. **Deploy**: Connect to your MCP client (Claude Desktop, etc.)
-5. **Contribute**: Share your templates with the community
+**PowerShell:** Testato con PowerShell 5 e 7+, UTF-8 support, cross-platform
 
 ## Support & Community
 
-- **GitHub Issues**: Bug reports and feature requests
-- **Documentation**: Comprehensive guides and examples
-- **Contributions**: Welcome! Please read our contributing guidelines
-- **Examples**: Explore generated examples in the repository
+- **GitHub Issues:** Bug reports e feature requests
+- **Documentazione:** Guide complete in `.cursor/commands/`
+- **Contribuzioni:** Welcome! Consulta le guide per contribuire
 
 ## License
 
-MIT License - see LICENSE file for full details.
-
-## About
-
-MCP Builder MIC is dedicated to advancing MCP (Model Context Protocol) adoption by providing high-quality, production-ready server generation tools.
-
-**Project Founder**: MIC  
-**Version**: 1.0.0  
-**Status**: Production Ready  
+MIT License - see LICENSE file for details.
 
 ---
 
-*Generated with MCP Builder - Professional MCP Server Generation Tool*
+**Project Founder:** MIC | **Version:** 1.0.0 | **Status:** Production Ready
