@@ -102,11 +102,11 @@ Aggiungi questa configurazione (CRUCIALE: includi `cwd`):
 {
   "mcpServers": {
     "holidays": {
-      "command": "C:\\Users\\a566269\\Desktop\\MCP Builder\\holidays_mcp\\.venv\\Scripts\\python.exe",
+      "command": "C:\\path\\to\\holidays_mcp\\.venv\\Scripts\\python.exe",
       "args": [
         "holidays_mcp.py"
       ],
-      "cwd": "C:\\Users\\a566269\\Desktop\\MCP Builder\\holidays_mcp",
+      "cwd": "C:\\path\\to\\holidays_mcp",
       "env": {
         "HOLIDAYS_API_KEY": "your-api-key-here"
       }
